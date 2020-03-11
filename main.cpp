@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #define MAX 999
 using namespace std;
 int main() {
@@ -9,7 +10,7 @@ int main() {
         int tensDigit = i/10%10;//十位数
         int hundredsDigit = i/100%10;//百位数
         //判断是否是水仙花数
-        if (unitsDigit*unitsDigit*unitsDigit+tensDigit*tensDigit*tensDigit+hundredsDigit*hundredsDigit*hundredsDigit==i){
+        if (pow(unitsDigit,3)+pow(tensDigit,3)+pow(hundredsDigit,3)==i){
             cout<<i<<"\t"<<"是水仙花数"<<endl;
             count++;
         } else{
