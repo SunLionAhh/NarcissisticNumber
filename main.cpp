@@ -11,7 +11,7 @@ int main() {
         int hundredsDigit = i/100%10;//hundredsDigit
         //Determine whether these numbers are Narcissistic Numbers.
         if (pow(unitsDigit,3)+pow(tensDigit,3)+pow(hundredsDigit,3)==i){
-            cout<<i<<"\t"<<"是水仙花数"<<endl;
+            cout<<i<<"\t"<<"is Narcissistic Number."<<endl;
             count++;
         } else{
             cout<<i<<"\t"<<"=_="<<endl;
